@@ -9,3 +9,15 @@
 .content-grid {
   max-width: 80%;
 }
+img {
+  max-width: 80%;
+}
+
+.title-links {
+  cursor: pointer;
+}
+
+.title-links:hover {
+  text-decoration: underline;
+  color: darkred;
+}
