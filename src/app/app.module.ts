@@ -14,6 +14,9 @@ import { CreateComponent } from './create/create.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
 import { CreateProjectComponent } from './create-project/create-project.component';
+import { EditProjectComponent } from './edit-project/edit-project.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { CreatorPipe } from './creator.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -32,7 +35,10 @@ export const firebaseConfig = {
     CreateComponent,
     NavbarComponent,
     ProjectDetailComponent,
-    CreateProjectComponent
+    CreateProjectComponent,
+    EditProjectComponent,
+    DashboardComponent,
+    CreatorPipe
   ],
   imports: [
     BrowserModule,
