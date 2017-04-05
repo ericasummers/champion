@@ -1,3 +1,3 @@
-<p>
-  home works!
-</p>
+<div *ngFor="let project of projects | async">
+  <h3><em>{{project.title}}</em> by {{project.creator}}</h3>
+</div>

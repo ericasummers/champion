@@ -1,0 +1,46 @@
+{ "projects": [{
+    "title": "Not Here Right Now: A Live One-Man Show",
+    "creator": "Royce Bable",
+    "description": "Royce, an ambitious 20-something, trades in his promising corporate media research career for a one-way ticket to Southeast Asia.",
+    "URL": "https://ksr-ugc.imgix.net/assets/015/593/119/4074a3a89802fcf5edc9de01fa2e7bed_original.jpg?w=680&fit=max&v=1487722751&auto=format&q=92&s=8dfc1bc090f7d6005c7b1c430f03a4fd",
+    "categories": "comedy",
+    "goal": "10000",
+    "location": "Atlanta, GA",
+    "creator-image": "https://ksr-ugc.imgix.net/assets/015/201/431/1325f4f292bfd161cd8b3e81fd65698e_original.png?w=80&h=80&fit=crop&v=1487610227&auto=format&q=92&s=98ed6237e55977fcf350d6087efc1706",
+    "date": "2017-4-1",
+    "deadline": "2017-4-13"
+  }, {
+    "title": "Smore Magazine: Ignite Her Brilliance",
+    "creator": "Sarita Menon",
+    "description": "An unconventional comic book style science magazine designed to get girls STEM-smart. Created for girls. Recommended for all humans.",
+    "URL": "https://ksr-ugc.imgix.net/assets/015/929/291/faa45fce8166dfdeeb722e42c17954eb_original.jpg?w=1024&h=576&fit=fill&bg=000000&v=1490484803&auto=format&q=92&s=b8f28271177cfec170b6ab372112fc6b",
+    "categories": "Children's Books",
+    "goal": "7500",
+    "location": "Houston, TX",
+    "creator-image": "https://ksr-ugc.imgix.net/assets/015/852/565/13fef39fcb7618f3702605e257ff4bc9_original.jpg?w=80&h=80&fit=crop&v=1490653836&auto=format&q=92&s=007e4c31d3178810c6ed2aae0524a6e4",
+    "date": "2017-4-13",
+    "deadline": "2017-4-27"
+  }, {
+    "title": "2084: Sci-fi short story anthology inspired by Orwell",
+    "creator": "Unsung Stories",
+    "description": "Predictions of our future, inspired by George Orwell's Nineteen Eighty-Four, from 12 leading science fiction writers.",
+    "URL": "https://ksr-ugc.imgix.net/assets/015/210/297/00f9c2fc908403fd453cc47e4919951e_original.jpg?w=1024&h=576&fit=fill&bg=000000&v=1490112509&auto=format&q=92&s=3e86ef16a74fb881aaa962b50e3ea865",
+    "categories": "Fiction",
+    "goal": "3111",
+    "location": "London, UK",
+    "creator-image": "https://ksr-ugc.imgix.net/assets/015/220/237/bf53b25b425b3a3680b26669c5daa71d_original.png?w=80&h=80&fit=crop&v=1484823256&auto=format&q=92&s=122de45d04e4009035f9ee5df162a0a9",
+    "date": "2017-4-16",
+    "deadline": "2017-4-28"
+  }, {
+    "title": "Hidden Time Watch",
+    "creator": "Anicorn Watches",
+    "description": "The first edition of The Trio of Time, featuring a vanishing timepiece beautifully designed to alter your perception of passing hours.",
+    "URL": "https://ksr-ugc.imgix.net/assets/015/912/073/2a637d4f9dfa894e8d30defc0549e1e5_original.png?w=680&fit=max&v=1489841287&auto=format&lossless=true&s=a2dab1bc5527256b171ce2d9fe161897",
+    "categories": "Product Design",
+    "goal": "51480",
+    "location": "Hong Kong, Hong Kong",
+    "creator-image": "https://ksr-ugc.imgix.net/assets/009/252/109/b8e8864b25f37393cdb4f45c6e5d0276_original.png?w=80&h=80&fit=crop&v=1461568228&auto=format&q=92&s=74ebce6956f404acc9488cd2641201ab",
+    "date": "2017-4-08",
+    "deadline": "2017-4-20"
+  }
+]}
