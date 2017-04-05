@@ -1,5 +1,6 @@
 <main class="mdl-layout__content">
   <div class="page-content">
+    <h2>Browse Projects:</h2>
     <div class="content-grid mdl-grid">
     <div *ngFor="let project of projects | async" (click)="goToProjectPage(project)" class="mdl-cell project-cells" [style.background-image]="'url(' + project.url + ')'">
     <h4><em><span class="title-links">{{project.title}}</span></em></h4>
