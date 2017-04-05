@@ -5,8 +5,7 @@ import { AboutComponent } from './about/about.component';
 import { CreateComponent } from './create/create.component';
 import { ChampionComponent } from './champion/champion.component';
 import { ContactComponent } from './contact/contact.component';
-
-
+import { ProjectDetailComponent } from './project-detail/project-detail.component';
 
 
 const appRoutes: Routes = [
@@ -14,6 +13,10 @@ const appRoutes: Routes = [
   {
     path: '',
     component: HomeComponent
+  },
+  {
+    path: 'project-details/:id',
+    component: ProjectDetailComponent
   },
   {
     path: 'about',
