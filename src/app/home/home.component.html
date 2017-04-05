@@ -1,3 +1,7 @@
-<div *ngFor="let project of projects | async" (click)="goToProjectPage(project)">
-  <h3><em>{{project.title}}</em> by {{project.creator}}</h3>
-</div>
+<main class="mdl-layout__content">
+  <div class="page-content">
+    <div *ngFor="let project of projects | async" (click)="goToProjectPage(project)">
+    <h3><em>{{project.title}}</em> by {{project.creator}}</h3>
+    </div>
+  </div>
+</main>

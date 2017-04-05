@@ -7,7 +7,6 @@ import { ChampionComponent } from './champion/champion.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
 
-
 const appRoutes: Routes = [
 
   {
@@ -34,12 +33,6 @@ const appRoutes: Routes = [
     path: 'contact',
     component: ContactComponent
   }
-
 ];
-
-
-
-
-
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
