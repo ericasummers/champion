@@ -53,4 +53,18 @@ export class ProjectService {
     newLike = newLike + 1;
     projectEntryInFirebase.update({likes: newLike});
   }
+
+  fundProject(thisProjectId: any, amount: number) {
+    var projectEntryInFirebase = this.getProjectById(thisProjectId);
+    var newGoal = null;
+    projectEntryInFirebase.subscribe(dataLastEmittedObserver => {
+      newGoal = dataLastEmittedObserver.goal
+    });
+    if (newGoal > 0 && newGoal >= amount) {
+      newGoal = parseInt(newGoal) - amount;
+      projectEntryInFirebase.update({goal: newGoal});
+    } else {
+      alert("This project does not need this much funding but thanks for the offer!");
+    }
+  }
 }

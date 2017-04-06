@@ -36,21 +36,25 @@
     <input #avatar class="mdl-textfield__input" type="text" id="sample1">
     <label class="mdl-textfield__label" for="sample1">Avatar</label>
   </div>
-  <div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">
-        <select class="mdl-selectfield__select" id="category" name="category" #category>
-          <option value="" disabled selected>Choose your option</option>
-          <option value="technology">Technology</option>
-          <option value="fashion">Fashion</option>
-          <option value="art">Art</option>
-          <option value="music">Music</option>
-          <option value="travel">Travel</option>
-          <option value="cooking">Cooking</option>
-          <option value="literature">Literature</option>
-          <option value="games">Games</option>
-          <option value="automotive">Automotive</option>
-        </select>
-        <label class="mdl-selectfield__label" for="category">Category</label>
-      </div>
+  <div class="mdl-textfield mdl-js-textfield">
+    <input #category class="mdl-textfield__input" type="text">
+    <label class="mdl-textfield__label" for="sample1">Category</label>
+  </div>
+  <!-- <div class="mdl-selectfield mdl-js-selectfield mdl-selectfieldfloating-label">
+    <select class="mdl-selectfield__select" id="category" name="category" #category>
+      <option value="" disabled selected>Choose your option</option>
+      <option value="technology">Technology</option>
+      <option value="fashion">Fashion</option>
+      <option value="art">Art</option>
+      <option value="music">Music</option>
+      <option value="travel">Travel</option>
+      <option value="cooking">Cooking</option>
+      <option value="literature">Literature</option>
+      <option value="games">Games</option>
+      <option value="automotive">Automotive</option>
+    </select>
+    <label class="mdl-selectfield__label" for="category">Category</label>
+  </div> -->
 
   <br><br>
   <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" (click)="addProject(author.value, title.value, goal.value, deadline.value, launchDate.value, description.value, location.value, coverImage.value, avatar.value, category.value)">

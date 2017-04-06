@@ -2,8 +2,13 @@
   <div class="page-content">
     <app-login-page></app-login-page>
     <br><br>
-    <h2>Review/Edit Projects:</h2>
-    <div *ngFor="let project of projects | async">
+    <h2>Review/Edit Your Projects:</h2>
+
+    <select (change)="onCreatorChange($event.target.value)" id="creatorsList">
+      <option disabled value="Choose by creator"></option>
+      <option *ngFor="let project of projects | async" value="{{project.creator}}">{{project.creator}}</option>
+    </select>
+    <div *ngFor="let project of projects | async | creator:filterByCreator">
     <h4><em><span class="title-links">{{project.title}}</span></em></h4>
     <h6>By {{project.creator}}</h6>
     <img src="{{project.creatorImage}}">

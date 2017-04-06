@@ -42,4 +42,29 @@ export class ProjectDetailComponent implements OnInit {
     this.projectService.likeProject(this.projectId);
   }
 
+  fundProjectOne() {
+    console.log("funded");
+    this.projectService.fundProject(this.projectId, 1);
+  }
+  fundProjectFive() {
+    console.log("funded");
+    this.projectService.fundProject(this.projectId, 5);
+  }
+  fundProjectTen() {
+    console.log("funded");
+    this.projectService.fundProject(this.projectId, 10);
+  }
+  fundProjectTwenty() {
+    console.log("funded");
+    this.projectService.fundProject(this.projectId, 20);
+  }
+  fundProjectFifty() {
+    console.log("funded");
+    this.projectService.fundProject(this.projectId, 50);
+  }
+  fundProjectHundred() {
+    console.log("funded");
+    this.projectService.fundProject(this.projectId, 100);
+  }
+
 }

@@ -29,4 +29,8 @@ export class DashboardComponent implements OnInit {
   constructor(private projectService: ProjectService, private router: Router) {
   }
 
+  onCreatorChange(optionFromMenu) {
+    this.filterByCreator = optionFromMenu;
+  }
+
 }
