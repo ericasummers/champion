@@ -6,11 +6,12 @@
       <option *ngFor="let project of projects | async" value="{{project.creator}}">{{project.creator}}</option>
     </select>
     <!-- <div class="content-grid mdl-grid"> -->
-    <div *ngFor="let project of projects | async" [style.background-image]="'url(' + project.url + ')'">
+    <div *ngFor="let project of projects | async">
     <h4><em><span class="title-links">{{project.title}}</span></em></h4>
     <h6>By {{project.creator}}</h6>
     <img src="{{project.creatorImage}}">
     <app-edit-project [selectedProject]="project"></app-edit-project>
+    <button (click)="beginDeletingProject(project)">delete</button>
     </div>
   <!-- </div> -->
 </div>

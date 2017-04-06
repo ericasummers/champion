@@ -18,6 +18,12 @@ export class DashboardComponent implements OnInit {
     this.projects = this.projectService.getProjects();
   }
 
+  beginDeletingProject(projectToDelete) {
+    if(confirm("Are you sure you want to delete this item from your projects?")){
+     this.projectService.deleteProject(projectToDelete);
+   }
+  }
+
   // onCreatorChange(optionFromMenu) {
   //   this.creatorProjects = [];
   //   var numberOfCreators: any = document.getElementById("creatorsList");
