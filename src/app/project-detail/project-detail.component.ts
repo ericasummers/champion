@@ -32,7 +32,8 @@ export class ProjectDetailComponent implements OnInit {
         dataLastEmittedObserver.description,
         dataLastEmittedObserver.goal,
         dataLastEmittedObserver.location,
-        dataLastEmittedObserver.title)
+        dataLastEmittedObserver.title,
+      dataLastEmittedObserver.likes)
     });
   }
 

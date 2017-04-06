@@ -10,13 +10,13 @@
     <p>Location: {{projectToDisplay?.location}}</p>
     <p>Description: {{projectToDisplay?.description}}</p>
     <p>Category: {{projectToDisplay?.categories}}</p>
-    <div *ngIf="!projectToDisplay?.likes">
+    <div *ngIf="projectToDisplay?.likes == 0">
       <p><span class="mdl-button mdl-js-button mdl-button--icon" (click)="likeProject()">
-      <i class="material-icons like-icon">favorite_border</i></span></p>
+      <i class="material-icons like-icon">favorite_border</i></span> 0</p>
     </div>
-    <div *ngIf="projectToDisplay?.likes">
+    <div *ngIf="projectToDisplay?.likes > 0">
       <p><span class="mdl-button mdl-js-button mdl-button--icon" (click)="likeProject()">
-      <i class="material-icons like-icon">favorite</i></span></p>
+      <i class="material-icons like-icon">favorite</i></span> {{projectToDisplay?.likes}}</p>
     </div>
   </div>
   <div class="mdl-cell mdl-cell--12-col">
