@@ -7,7 +7,7 @@ import { ChampionComponent } from './champion/champion.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-
+import { LoginPageComponent } from './login-page/login-page.component';
 
 
 const appRoutes: Routes = [
@@ -35,6 +35,10 @@ const appRoutes: Routes = [
   {
     path: 'contact',
     component: ContactComponent
+  },
+  {
+    path: 'login',
+    component: LoginPageComponent
   },
   {
     path: 'dashboard',

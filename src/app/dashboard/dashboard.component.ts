@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFire, FirebaseListObservable } from 'angularfire2';
 import { ProjectService } from '../project.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-dashboard',
@@ -12,8 +13,6 @@ export class DashboardComponent implements OnInit {
   filterByCreator: string = "creator";
   projects: FirebaseListObservable<any[]>;
 
-  constructor(private projectService: ProjectService) { }
-
   ngOnInit() {
     this.projects = this.projectService.getProjects();
   }
@@ -22,6 +21,12 @@ export class DashboardComponent implements OnInit {
     if(confirm("Are you sure you want to delete this item from your projects?")){
      this.projectService.deleteProject(projectToDelete);
    }
+  }
+
+  private isLoggedIn: Boolean;
+  private user_displayName: String;
+  private user_email: String;
+  constructor(private projectService: ProjectService, private router: Router) {
   }
 
   // onCreatorChange(optionFromMenu) {

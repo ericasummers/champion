@@ -17,6 +17,8 @@ import { CreateProjectComponent } from './create-project/create-project.componen
 import { EditProjectComponent } from './edit-project/edit-project.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CreatorPipe } from './creator.pipe';
+import { AuthService } from './providers/auth.service';
+import { LoginPageComponent } from './login-page/login-page.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -38,7 +40,8 @@ export const firebaseConfig = {
     CreateProjectComponent,
     EditProjectComponent,
     DashboardComponent,
-    CreatorPipe
+    CreatorPipe,
+    LoginPageComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +50,7 @@ export const firebaseConfig = {
     AngularFireModule.initializeApp(firebaseConfig),
     routing
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
