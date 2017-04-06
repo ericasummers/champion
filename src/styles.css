@@ -53,3 +53,24 @@ img {
 body {
   font-family: 'Raleway', sans-serif;
 }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+.project-header {
+  margin-left: 8%;
+}
+
+.deadline {
+  font-weight: bold;
+  color: darkred;
+  font-size: 120%;
+}
