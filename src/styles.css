@@ -28,6 +28,8 @@ img {
 
 .content-grid {
   max-width: 90%;
+  font-family: 'Raleway', sans-serif;
+
 }
 
 .creator-pics {
@@ -41,4 +43,9 @@ img {
 
 .like-icon {
   color: #FF33CE;
+}
+
+
+body {
+  font-family: 'Raleway', sans-serif;
 }

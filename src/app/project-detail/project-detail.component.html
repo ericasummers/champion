@@ -5,7 +5,7 @@
     <img src="{{projectToDisplay?.url}}">
   </div>
   <div class="mdl-cell mdl-cell--4-col">
-    <h4>Funds needed: <span class="money">${{projectToDisplay?.goal}}</span></h4>
+    <h4>Funds needed: <span class="money">${{projectToDisplay?.goal | number}}</span></h4>
     <p>This project needs to be funded by: {{projectToDisplay?.deadline | date}}</p>
     <p>Location: {{projectToDisplay?.location}}</p>
     <p>Description: {{projectToDisplay?.description}}</p>
@@ -14,9 +14,13 @@
       <p><span class="mdl-button mdl-js-button mdl-button--icon" (click)="likeProject()">
       <i class="material-icons like-icon">favorite_border</i></span> 0</p>
     </div>
-    <div *ngIf="projectToDisplay?.likes > 0">
+    <div *ngIf="projectToDisplay?.likes == 1">
       <p><span class="mdl-button mdl-js-button mdl-button--icon" (click)="likeProject()">
-      <i class="material-icons like-icon">favorite</i></span> {{projectToDisplay?.likes}}</p>
+      <i class="material-icons like-icon">favorite</i></span> {{projectToDisplay?.likes}} love</p>
+    </div>
+    <div *ngIf="projectToDisplay?.likes > 1">
+      <p><span class="mdl-button mdl-js-button mdl-button--icon" (click)="likeProject()">
+      <i class="material-icons like-icon">favorite</i></span> {{projectToDisplay?.likes}} loves</p>
     </div>
   </div>
   <div class="mdl-cell mdl-cell--12-col">
