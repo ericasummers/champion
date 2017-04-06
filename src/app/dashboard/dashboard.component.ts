@@ -29,16 +29,4 @@ export class DashboardComponent implements OnInit {
   constructor(private projectService: ProjectService, private router: Router) {
   }
 
-  // onCreatorChange(optionFromMenu) {
-  //   this.creatorProjects = [];
-  //   var numberOfCreators: any = document.getElementById("creatorsList");
-  //   // var numberOfCreators = [];
-  //   console.log(numberOfCreators);
-  //   for (var i = 0; i < numberOfCreators; i++) {
-  //     if (optionFromMenu === this.projects[i].creator) {
-  //       this.creatorProjects.push(this.projects[i]);
-  //     }
-  //   }
-  // }
-
 }
