@@ -23,4 +23,19 @@ export class ProjectService {
   saveProject(newProject: Project) {
     this.projects.push(newProject);
   }
+
+  updateProject(thisProject: any) {
+    var projectEntryInFirebase = this.getProjectById(thisProject.$key);
+    projectEntryInFirebase.update({title: thisProject.title,
+                                creator: thisProject.creator,
+                                goal: thisProject.goal,
+                                deadline: thisProject.deadline,
+                                location: thisProject.location,
+                                url: thisProject.url,
+                                date: thisProject.date,
+                                description: thisProject.description,
+                                creatorImage: thisProject.creatorImage,
+                                categories: thisProject.categories});
+
+  }
 }

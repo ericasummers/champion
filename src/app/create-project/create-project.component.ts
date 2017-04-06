@@ -12,9 +12,13 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
 export class CreateProjectComponent implements OnInit {
 
   addProject(author: string, title: string, goal: number, deadline: string, launchDate: string, description: string, location: string, coverImage: string, avatar: string, category: string) {
-    var newProject: Project = new Project(coverImage, category, author, avatar, launchDate, deadline, description, goal, location, title);
-    console.log(newProject);
-    this.projectService.saveProject(newProject);
+    if (!author || !title || !goal || !deadline || !launchDate || !description || !location || !coverImage || !avatar || !category) {
+      alert("Please complete all fields to create a project");
+    } else {
+      var newProject: Project = new Project(coverImage, category, author, avatar, launchDate, deadline, description, goal, location, title);
+      console.log(newProject);
+      this.projectService.saveProject(newProject);
+    }
   }
 
   constructor(private projectService: ProjectService) { }

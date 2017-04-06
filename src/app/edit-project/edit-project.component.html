@@ -1,3 +1,52 @@
-<p>
-  edit-project works!
-</p>
+<div>
+  <button (click)="showEditForm()">Edit</button>
+</div>
+<div *ngIf="editFormShown">
+  <h3>Edit a Project:</h3>
+  <div class="mdl-textfield mdl-js-textfield">
+    <input [(ngModel)]="selectedProject.creator" class="mdl-textfield__input" type="text" >
+    <label class="mdl-textfield__label" for="sample1">Who You Are?</label>
+  </div>
+  <div  class="mdl-textfield mdl-js-textfield">
+    <input [(ngModel)]="selectedProject.title" class="mdl-textfield__input" type="text" >
+    <label class="mdl-textfield__label" for="sample1">Project Title</label>
+  </div>
+  <div class="mdl-textfield mdl-js-textfield">
+    <input [(ngModel)]="selectedProject.goal" class="mdl-textfield__input" type="number" >
+    <label class="mdl-textfield__label" for="sample1">Goal</label>
+  </div>
+  <div class="mdl-textfield mdl-js-textfield">
+    <input [(ngModel)]="selectedProject.deadline" class="mdl-textfield__input" type="date" >
+    <label class="mdl-textfield__label" for="sample1">Deadline</label>
+  </div>
+  <div class="mdl-textfield mdl-js-textfield">
+    <input [(ngModel)]="selectedProject.launchDate" class="mdl-textfield__input" type="date" >
+    <label class="mdl-textfield__label" for="sample1">Launch Date</label>
+  </div>
+  <div class="mdl-textfield mdl-js-textfield">
+    <input [(ngModel)]="selectedProject.description" class="mdl-textfield__input" type="text" >
+    <label class="mdl-textfield__label" for="sample1">Description</label>
+  </div>
+  <div class="mdl-textfield mdl-js-textfield">
+    <input [(ngModel)]="selectedProject.location" class="mdl-textfield__input" type="text" >
+    <label class="mdl-textfield__label" for="sample1">Location</label>
+  </div>
+  <div class="mdl-textfield mdl-js-textfield">
+    <input [(ngModel)]="selectedProject.coverImage" class="mdl-textfield__input" type="text" >
+    <label class="mdl-textfield__label" for="sample1">Cover Image</label>
+  </div>
+  <div class="mdl-textfield mdl-js-textfield">
+    <input [(ngModel)]="selectedProject.avatar" class="mdl-textfield__input" type="text" >
+    <label class="mdl-textfield__label" for="sample1">Avatar</label>
+  </div>
+  <div class="mdl-textfield mdl-js-textfield">
+    <input [(ngModel)]="selectedProject.category" class="mdl-textfield__input" type="text" >
+    <label class="mdl-textfield__label" for="sample1">Category</label>
+  </div>
+  <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" (click)="updateProject(selectedProject)">
+  <i class="material-icons">edit</i>
+</button>
+<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" (click)="cancelEdit()">
+<i class="material-icons">cancel</i>
+</button>
+</div>

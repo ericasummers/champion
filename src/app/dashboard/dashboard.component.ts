@@ -11,7 +11,6 @@ import { ProjectService } from '../project.service';
 export class DashboardComponent implements OnInit {
   filterByCreator: string = "creator";
   projects: FirebaseListObservable<any[]>;
-  creatorProjects: any = [];
 
   constructor(private projectService: ProjectService) { }
 
@@ -19,16 +18,16 @@ export class DashboardComponent implements OnInit {
     this.projects = this.projectService.getProjects();
   }
 
-  onCreatorChange(optionFromMenu) {
-    this.creatorProjects = [];
-    var numberOfCreators: any = document.getElementById("creatorsList");
-    // var numberOfCreators = [];
-    console.log(numberOfCreators);
-    for (var i = 0; i < numberOfCreators; i++) {
-      if (optionFromMenu === this.projects[i].creator) {
-        this.creatorProjects.push(this.projects[i]);
-      }
-    }
-  }
+  // onCreatorChange(optionFromMenu) {
+  //   this.creatorProjects = [];
+  //   var numberOfCreators: any = document.getElementById("creatorsList");
+  //   // var numberOfCreators = [];
+  //   console.log(numberOfCreators);
+  //   for (var i = 0; i < numberOfCreators; i++) {
+  //     if (optionFromMenu === this.projects[i].creator) {
+  //       this.creatorProjects.push(this.projects[i]);
+  //     }
+  //   }
+  // }
 
 }
