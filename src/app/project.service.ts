@@ -43,4 +43,14 @@ export class ProjectService {
                                 categories: thisProject.categories});
 
   }
+
+  likeProject(thisProjectId: any) {
+    var projectEntryInFirebase = this.getProjectById(thisProjectId);
+    var newLike = null;
+    projectEntryInFirebase.subscribe(dataLastEmittedObserver => {
+      newLike = dataLastEmittedObserver.likes
+    });
+    newLike = newLike + 1;
+    projectEntryInFirebase.update({likes: newLike});
+  }
 }

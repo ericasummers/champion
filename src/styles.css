@@ -25,3 +25,20 @@ img {
   text-decoration: underline;
   color: darkred;
 }
+
+.content-grid {
+  max-width: 90%;
+}
+
+.creator-pics {
+  border-radius: 30px;
+  max-width: 40px;
+}
+
+.money {
+  color: green;
+}
+
+.like-icon {
+  color: #FF33CE;
+}

@@ -1,7 +1,25 @@
 <h2>{{projectToDisplay?.title}}</h2>
-<img src="{{projectToDisplay?.url}}">
-<h5>By {{projectToDisplay?.creator}} &nbsp;<img src="{{projectToDisplay?.creatorImage}}">, on {{projectToDisplay?.date}} || Location: {{projectToDisplay?.location}}</h5>
-<h4>Description: {{projectToDisplay?.description}}</h4>
-<h4>This project needs to be funded by: {{projectToDisplay?.deadline}}</h4>
-<p>Funds needed: {{projectToDisplay?.goal}}</p>
-<p>Category: {{projectToDisplay?.categories}}</p>
+<p>By {{projectToDisplay?.creator}} &nbsp;<img src="{{projectToDisplay?.creatorImage}}" class="creator-pics">, on {{projectToDisplay?.date | date}}</p>
+<div class="content-grid mdl-grid">
+  <div class="mdl-cell mdl-cell--8-col">
+    <img src="{{projectToDisplay?.url}}">
+  </div>
+  <div class="mdl-cell mdl-cell--4-col">
+    <h4>Funds needed: <span class="money">${{projectToDisplay?.goal}}</span></h4>
+    <p>This project needs to be funded by: {{projectToDisplay?.deadline | date}}</p>
+    <p>Location: {{projectToDisplay?.location}}</p>
+    <p>Description: {{projectToDisplay?.description}}</p>
+    <p>Category: {{projectToDisplay?.categories}}</p>
+    <div *ngIf="!projectToDisplay?.likes">
+      <p><span class="mdl-button mdl-js-button mdl-button--icon" (click)="likeProject()">
+      <i class="material-icons like-icon">favorite_border</i></span></p>
+    </div>
+    <div *ngIf="projectToDisplay?.likes">
+      <p><span class="mdl-button mdl-js-button mdl-button--icon" (click)="likeProject()">
+      <i class="material-icons like-icon">favorite</i></span></p>
+    </div>
+  </div>
+  <div class="mdl-cell mdl-cell--12-col">
+    <p>Funding stuff</p>
+  </div>
+</div>

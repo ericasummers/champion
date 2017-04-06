@@ -36,4 +36,9 @@ export class ProjectDetailComponent implements OnInit {
     });
   }
 
+  likeProject() {
+    console.log("liked");
+    this.projectService.likeProject(this.projectId);
+  }
+
 }
